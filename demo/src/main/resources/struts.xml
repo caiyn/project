@@ -5,13 +5,13 @@
 <struts>
 	<constant name="struts.objectFactory" value="spring" />
     <constant name="struts.devMode" value="false" />
-    <constant name="struts.enable.DynamicMethodInvocation" value="true" />
-	<package name="platforms" abstract="true" extends="json-default" >
-	<!-- 全局的result -->
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+	<package name="mydefault" abstract="true" extends="json-default" >
+	<!--全局的result -->
 		<global-results>
-			<result type="json"></result>
+				<result type="json"></result>
 		</global-results>
-		<!-- 配置动态方法调用 -->
+	<!-- 配置动态方法调用 -->
 		<global-allowed-methods>regex:.*</global-allowed-methods>
 	</package>
 	<!-- 业务层的struts配置文件的引入 -->

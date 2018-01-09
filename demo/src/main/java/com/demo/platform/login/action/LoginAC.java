@@ -11,39 +11,27 @@ public class LoginAC extends CommonAction {
 	private static final long serialVersionUID = 1L;
 	
 	private User user;
-	private String username;
-	private String password;
 
-	public String getUsername() {
-		return username;
+	public User getUser() {
+		return user;
 	}
 
-	public void setUsername(String username) {
-		this.username = username;
-	}
-
-	public String getPassword() {
-		return password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
+	public void setUser(User user) {
+		this.user = user;
 	}
 
 	public String registerUser(){
-		loginBS.registerUser(username,password);
+		loginBS.registerUser(user);
 		return SUCCESS;
 	}
 //	public String execute(){
 //		loginBS.registerUser(user);
 //		return SUCCESS;
 //	}
-	
+
 	public void setLoginBS(LoginBS loginBS) {
 		this.loginBS = loginBS;
 	}
 	
-	public void setUser(User user) {
-		this.user = user;
-	}
+
 }

@@ -25,16 +25,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-   <form action="/demo/platform/registerAC!registerUser.action" method="post">
+   <%--<form action="/demo/platform/registerAC.action" method="post">
     	<input type="text" name="username"/>
     	<input type="password" name="password"/>
-    	<input type="submit" id="registerbtnsdf" value="提交"/>
+    	<input type="submit" value="提交"/>
     </form>
-  	<%--
+  	--%>
   	
   	
   	<input type="text" id="username"/>
    	<input type="password" id="password"/>
    	<input type="button" id="registerbtn" value="提交"/>
-  --%></body>
+  </body>
 </html>
