@@ -8,12 +8,13 @@ public class LoginDAOImpl extends JdbcBaseDao implements LoginDAO {
 	/**
 	 * 注册用户
 	 */
-	private static String CREATE_USER = "INSERT INTO USER(id,username,password) VALUES(?,?,?) ";
+	private static String CREATE_USER = "INSERT INTO USER(username,password) VALUES(?,?,?) ";
 	@Override
-	public void register(User user) {
+	public void register(String username,String password) {
 		// TODO Auto-generated method stub
-		user.setUid(com.demo.common.util.IDGenerator.generateId());
-		this.executeUpdate(CREATE_USER, new Object[]{user.getUid(),user.getUsername(),user.getPassword()});
+//		user.setUid(com.demo.common.util.IDGenerator.generateId());
+		String id = com.demo.common.util.IDGenerator.generateId();
+		this.executeUpdate(CREATE_USER, new Object[]{id,username,password});
 	}
 
 }

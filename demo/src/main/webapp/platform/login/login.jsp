@@ -20,20 +20,21 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
    <script type="text/javascript" src="common/js/jquery-1.8.3.js"></script>
+   <script type="text/javascript" src="common/js/json2.js"></script>
    <script type="text/javascript" src="platform/login/js/login.js"></script>
   </head>
   
   <body>
-    <!--<form action="demo/platform/registerAC!registerUser.action" method="post">
-    	<input type="text" id="username"/>
-    	<input type="password" id="password"/>
-    	<input type="button" id="registerbtn" value="提交"/>
+   <form action="/demo/platform/registerAC!registerUser.action" method="post">
+    	<input type="text" name="username"/>
+    	<input type="password" name="password"/>
+    	<input type="submit" id="registerbtnsdf" value="提交"/>
     </form>
-  -->
-  <div>
+  	<%--
+  	
+  	
   	<input type="text" id="username"/>
    	<input type="password" id="password"/>
    	<input type="button" id="registerbtn" value="提交"/>
-  </div>
-  </body>
+  --%></body>
 </html>
