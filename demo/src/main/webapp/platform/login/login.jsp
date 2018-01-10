@@ -35,6 +35,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   	
   	<input type="text" id="username"/>
    	<input type="password" id="password"/>
-   	<input type="button" id="registerbtn" value="提交"/>
+   	<input type="button" id="registerbtn" value="注册"/>
+   	<input type="button" id="loginBtn" value="登录"/>
   </body>
 </html>

@@ -35,6 +35,11 @@
 		<artifactId>spring-jdbc</artifactId>
 		<version>${org.springframework.version}</version>
 	</dependency>
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-aspects</artifactId>
+		<version>${org.springframework.version}</version>
+	</dependency>
   <!-- struts2&spring end -->
   <!-- db start -->
 	<dependency>

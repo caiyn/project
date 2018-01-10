@@ -9,7 +9,12 @@ public class LoginBSImpl implements LoginBS {
 	@Override
 	public void registerUser(User user) {
 		// TODO Auto-generated method stub
-		loginDAO.register(user);
+		/**
+		 * 首先判断该用户在数据库中是否存在,只有不存在才能注册
+		 */
+		if(!loginDAO.userIfExist(user)){
+			loginDAO.register(user);
+		}
 	}
 	public void setLoginDAO(LoginDAO loginDAO) {
 		this.loginDAO = loginDAO;
