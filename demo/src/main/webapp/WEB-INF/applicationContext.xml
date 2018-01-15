@@ -17,6 +17,11 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.springframework.org/schema/beans">
 	
 	<!-- 业务层的配置文件导入 -->
+	<!-- 天猫后台管理/分类管理 -->
+	<import resource="conf/admin/category/action-app-context.xml"/>
+	<import resource="conf/admin/category/bs-app-context.xml"/>
+	<import resource="conf/admin/category/dao-app-context.xml"/>
+	<!-- 登录注册 -->
 	<import resource="conf/platform/login/action-app-context.xml"/>
 	<import resource="conf/platform/login/bs-app-context.xml"/>
 	<import resource="conf/platform/login/dao-app-context.xml"/>

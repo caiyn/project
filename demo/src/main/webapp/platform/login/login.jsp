@@ -19,10 +19,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
-   <script type="text/javascript" src="common/js/jquery-1.8.3.js"></script>
+   <script type="text/javascript" src="common/js/jquery-1.9.1.js"></script>
    <script type="text/javascript" src="common/js/json2.js"></script>
    <script type="text/javascript" src="platform/login/js/login.js"></script>
-  </head>
+   <script type="text/javascript" src="common/js/bootstrap.js"></script>
+   <link rel="stylesheet" href="common/css/bootstrap.css" type="text/css"></link>
+   </head>
   
   <body>
    <%--<form action="/demo/platform/registerAC.action" method="post">
@@ -31,7 +33,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     	<input type="submit" value="提交"/>
     </form>
   	--%>
-  	
   	
   	<input type="text" id="username"/>
    	<input type="password" id="password"/>

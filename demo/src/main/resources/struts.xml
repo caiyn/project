@@ -16,4 +16,5 @@
 	</package>
 	<!-- 业务层的struts配置文件的引入 -->
 	<include file="com/demo/platform/login/struts.xml"></include>
+	<include file="com/demo/admin/category/struts.xml"></include>
 </struts>
