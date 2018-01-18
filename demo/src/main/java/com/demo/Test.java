@@ -14,6 +14,6 @@ public class Test {
 //		user.setUsername("lj");
 //		user.setPassword("111");
 //		loginBS.registerUser(user);
-		CategoryListDao.queryCategoryList();
+//		CategoryListDao.queryCategoryList();
 	}
 }

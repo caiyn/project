@@ -3,9 +3,9 @@ var demo = (function(){
 	 * 校验用户名和密码合不合法的判断
 	 */
 	function checkUser(param1,param2){
-		alert(param1)
+//		alert(param1)
 		var pattern = /^[a-zA-Z0-9_-]{6}$/;
-		alert(pattern.test(param1))
+//		alert(pattern.test(param1))
 		if(param1==""||param2==""){
 			alert("用户名或密码不能为空！");
 			return false;
