@@ -14,11 +14,13 @@ public class CategoryListAC extends CommonAction{
 	private int start;
 	private int limit;
 	private boolean checkScroll = false;
+	private int totalCount;
 	public String initLoadCategoryList(){
 		Pagination pagination = new Pagination();
 		pagination.setStart(start);
 		pagination.setLimit(limit);
 		categoryList = categoryListBS.queryCategoryList(pagination);
+		totalCount = pagination.getTotal();
 		checkScroll = pagination.getStart()+pagination.getLimit()<pagination.getTotal();
 		return SUCCESS;
 	}
@@ -52,6 +54,10 @@ public class CategoryListAC extends CommonAction{
 
 	public boolean isCheckScroll() {
 		return checkScroll;
+	}
+
+	public int getTotalCount() {
+		return totalCount;
 	}
 
 }

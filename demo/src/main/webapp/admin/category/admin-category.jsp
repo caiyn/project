@@ -42,7 +42,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   		<h1 class="label label-info">分类管理</h1>
   		<br/>
   		<br/>
-  		<div class="listDataTableDiv"  style="height:300px;overflow-y:scroll" onscroll="category.loadCategoryListByScroll();">
+  		<!-- onscroll="category.loadCategoryListByScroll();" -->
+  		<div class="listDataTableDiv"  style="height:289px;overflow-y:scroll" onscroll="category.loadCategoryListByScroll();">
   			<table class="table table-striped table-bordered table-hover table-condensed">
   				<thead>
   					<tr class="success">
@@ -61,7 +62,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   		</div>
   		<div class="pageDiv">
   			<nav>
-  				<ul class="pagination">
+  				<ul class="pagination"><%--
   					<li class="disabled">
 				      <a href="#" aria-label="Previous">
 				        <span aria-hidden="true">&laquo;</span>
@@ -77,7 +78,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				        <span aria-hidden="true">&raquo;</span>
 				      </a>
 				    </li>
-  				</ul>
+  				--%></ul>
   			</nav>
   		</div>
   	</div>

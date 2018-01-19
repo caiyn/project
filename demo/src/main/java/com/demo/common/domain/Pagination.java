@@ -4,7 +4,6 @@ public class Pagination {
 	private int start = 0;
 	private int limit = 0;
 	private int total = 0;
-	private int totalCount = 0;
 	private int pageCount = 0;
 	public int getStart() {
 		return start;
@@ -23,12 +22,6 @@ public class Pagination {
 	}
 	public void setTotal(int total) {
 		this.total = total;
-	}
-	public int getTotalCount() {
-		return totalCount;
-	}
-	public void setTotalCount(int totalCount) {
-		this.totalCount = totalCount;
 	}
 	public int getPageCount() {
 		return pageCount;

@@ -25,7 +25,7 @@ public class JdbcBaseDao extends JdbcDaoSupport {
 //			sql = new StringBuffer("SELECT * FROM ( SELECT T.*, ROWNUM NUM FROM (").append(sql).append(
 //			") T WHERE ROWNUM <= ").append(pagination.getStart() + pagination.getLimit()).append(
 //			" ) TT  WHERE TT.NUM > ").append(pagination.getStart()).toString();
-			sql = "SELECT *FROM ("+sql+") a limit "+pagination.getStart()+" ,5";
+			sql = "SELECT *FROM ("+sql+") a limit "+pagination.getStart()+" ,"+pagination.getLimit()+"";
 			pagination.setTotal(totalCount);
 		}
 		return this.getJdbcTemplate().query(sql, rowMapper);
